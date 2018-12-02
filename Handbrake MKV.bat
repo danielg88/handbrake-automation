@@ -1,0 +1,1 @@
+FOR /f "tokens=*" %%G IN ('DIR /b *.mkv') DO "C:\Program Files\Handbrake\HandBrakeCLI" -i "%%G" -o "D:\Downloads\Handbrake\%%G".mp4  -f mp4 -4  -w 720 --loose-anamorphic  -e x264 -q 20 --vfr  -a 1 -E faac -B 160 -6 dpl2 -R Auto -D 0 --gain=0 --audio-copy-mask none --audio-fallback ffac3  --srt-file "%%~nG.srt" --srt-codeset ISO-8859-1 --srt-lang eng
